@@ -9,11 +9,6 @@ body {
     background-color:cornsilk;
 }
 
-div {
-
-
-}
-
 a:link, a:visited,  a:hover, a:active
 {
     color: white;
@@ -102,6 +97,10 @@ nav li {
     max-width: 100%;
 }
 
+#talchum iframe {
+    border: thick double black;
+}
+
 #shimcheong {
     margin: 1rem;
     background-color: peachpuff;
@@ -136,6 +135,9 @@ nav li {
     .desktop-only {
         display: none;
     }
+    #banner {
+        font-size: 18px;
+    }
     #intro {
         flex-wrap: wrap;
     }
@@ -144,6 +146,10 @@ nav li {
     }
     #shimcheong > #sc-img {
         display: none;
+    }
+    #talchum iframe {
+        border: thick double black;
+        max-width: 100%;
     }
 }
 
