@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    font-family: Calibri, sans-serif;
 }
 
 div {
@@ -12,7 +13,15 @@ div {
 
 }
 
+a:link, a:visited,  a:hover, a:active
+{
+    color: white;
+    text-decoration: none;
+}
+
 nav {
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -25,6 +34,7 @@ nav ul {
     z-index: 2;
     position: fixed;
     width: 100%;
+    margin-top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -32,7 +42,6 @@ nav ul {
 nav li {
     padding: 1em;
     width: 200px;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,7 +60,7 @@ nav li {
     position: relative;
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 #banner > img {
@@ -60,19 +69,66 @@ nav li {
 
 #banner > h1 {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color:rgba(0, 0 ,0 ,0.1);
 }
 
 #intro {
     display: flex;
     margin: 1rem;
+    background-color:cornsilk;
+    margin: 0;
 }
 
-#intro > p {
+#intro > img {
+    padding: 25px;
+}
+
+#intro > span {
     margin: 10px;
     padding: 25px;
+}
+
+#talchum {
+    display: flex;
+    margin: 1rem;
+    background-color:papayawhip;
+    margin: 0;
+}
+
+#talchum > img {
+    padding: 25px;
+    max-width: 50%;
+}
+
+#talchum > span {
+    margin: 10px;
+    padding: 25px;
+}
+
+#shimcheong {
+    margin: 1rem;
+    background-color: seashell;
+    margin: 0;
+    padding: 2rem;
+}
+
+#shimcheong > span {
+    margin: 10px;
+    padding: 25px;
+}
+
+#shimcheong > #sc-img {
+    display: flex;
+    width: calc(100%/3 - 2rem);
+    margin: 1rem;
+    float: left;
+}
+
+#sc-img > img {
+    width: 100%
 }
 
 #members > div {
