@@ -45,17 +45,7 @@ nav li {
     width: 200px;
 }
 
-@media only screen and (max-width: 600px) {
-    .desktop-only {
-        display: none;
-    }
-}
 
-@media only screen and (min-width: 601px) {
-    .mobile-only {
-        display: none;
-    }
-}
 
 #banner {
     position: relative;
@@ -66,6 +56,7 @@ nav li {
 
 #banner > img {
     width: 100%;
+    max-height: 500px;
 }
 
 #banner > h1 {
@@ -85,6 +76,7 @@ nav li {
 
 #intro > img {
     padding: 25px;
+    max-width: 100%;
 }
 
 #intro > span {
@@ -101,17 +93,18 @@ nav li {
 
 #talchum > img {
     padding: 25px;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 #talchum > span {
     margin: 10px;
     padding: 25px;
+    max-width: 100%;
 }
 
 #shimcheong {
     margin: 1rem;
-    background-color: whitesmoke;
+    background-color: peachpuff;
     margin: 50px;
     padding: 2rem;
 }
@@ -121,40 +114,41 @@ nav li {
     padding: 25px;
 }
 
+#shimcheong i {
+    font-size: 80%;
+    color: darkgreen;
+}
+
 #shimcheong > #sc-img {
     display: flex;
     width: calc(100%/3 - 2rem);
     margin: 1rem;
-    float: left;
 }
 
 #sc-img > img {
     width: 100%;
-
     padding: 1rem;
     margin: 1rem;
-
 }
 
-#members > div {
-    padding: 1rem;
-    border: solid 1px black;
-    /* width: calc(33% - 2rem); */
-    width: calc(100%/5 - 2rem);
-    float: left;
-    margin: 1rem;
-    color: black;
 
+@media only screen and (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+    #intro {
+        flex-wrap: wrap;
+    }
+    #talchum {
+        flex-wrap: wrap;
+    }
+    #shimcheong > #sc-img {
+        display: none;
+    }
 }
 
-#members div:first-child {
-    background-color: #C21E56;
-}
-
-#members div:nth-child(2) {
-    background-color: #EEB211;
-}
-
-#members div:last-child {
-    background-color: #6C3082;
+@media only screen and (min-width: 601px) {
+    .mobile-only {
+        display: none;
+    }
 }
